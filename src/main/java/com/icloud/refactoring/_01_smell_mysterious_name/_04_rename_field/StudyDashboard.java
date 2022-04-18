@@ -34,11 +34,4 @@ public class StudyDashboard {
             this.studyReviews.add(studyReview);
         }
     }
-
-
-    public static void main(String[] args) throws IOException {
-        StudyDashboard studyDashboard = new StudyDashboard();
-        studyDashboard.loadReviews();
-        studyDashboard.getStudyReviews().forEach(System.out::println);
-    }
 }

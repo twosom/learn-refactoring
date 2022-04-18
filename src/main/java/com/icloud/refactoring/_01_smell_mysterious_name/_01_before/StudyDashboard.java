@@ -35,15 +35,4 @@ public class StudyDashboard {
     public Set<String> getReviews() {
         return reviews;
     }
-
-    public static void main(String[] args) throws IOException {
-        GitHub gitHub = GitHub.connect();
-        GHRepository repository = gitHub.getRepository("whiteship/live-study");
-        GHIssue issue = repository.getIssue(30);
-
-        StudyDashboard studyDashboard = new StudyDashboard();
-        studyDashboard.studyReviews(issue);
-        studyDashboard.getUsernames().forEach(System.out::println);
-        studyDashboard.getReviews().forEach(System.out::println);
-    }
 }
