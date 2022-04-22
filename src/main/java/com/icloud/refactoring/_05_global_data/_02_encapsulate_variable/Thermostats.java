@@ -1,0 +1,44 @@
+package com.icloud.refactoring._05_global_data._02_encapsulate_variable;
+
+public class Thermostats {
+
+    private static Integer targetTemperature = 70;
+
+    private static Boolean heating = true;
+
+    private static Boolean cooling = false;
+
+    private static Boolean readFahrenheit = true;
+
+    public static Integer getTargetTemperature() {
+        return targetTemperature;
+    }
+
+    public static void setTargetTemperature(Integer targetTemperature) {
+        Thermostats.targetTemperature = targetTemperature;
+    }
+
+    public static Boolean getHeating() {
+        return heating;
+    }
+
+    public static void setHeating(Boolean heating) {
+        Thermostats.heating = heating;
+    }
+
+    public static Boolean getCooling() {
+        return cooling;
+    }
+
+    public static void setCooling(Boolean cooling) {
+        Thermostats.cooling = cooling;
+    }
+
+    public static Boolean getReadFahrenheit() {
+        return readFahrenheit;
+    }
+
+    public static void setReadFahrenheit(Boolean readFahrenheit) {
+        Thermostats.readFahrenheit = readFahrenheit;
+    }
+}
